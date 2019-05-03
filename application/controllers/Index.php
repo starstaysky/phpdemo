@@ -1,6 +1,7 @@
 <?php
 	class IndexController extends Yaf_Controller_Abstract{
 		public function indexAction(){
+			header('Content-Type:application/json');
 			echo json_encode(
 				[
 					'errno' => 0,
